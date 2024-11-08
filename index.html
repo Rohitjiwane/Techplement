@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./quote-left_icon_image.png" type="image/x-icon">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Quote of the Day</h1>
+        <div class="quote_box">
+            <p id="quote">"Loading...."</p>
+            <p id="author">-  </p>
+        </div>
+        <button id="new_quote" onclick="generateQuote()">New Quote</button>
+
+        <div id="search_quotes_box">
+            <input type="text" id="author_name" placeholder="Please enter author name">
+            <button onclick="searchQuotesByAuthor()">Search</button>
+        </div>
+        <div id="search_results" class="search_results"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/075999acb5.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
